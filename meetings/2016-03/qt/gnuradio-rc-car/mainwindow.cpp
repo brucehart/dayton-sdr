@@ -163,6 +163,7 @@ void MainWindow::processPendingDatagrams()
 
     //if any remaining samples are pending, process those before exiting
     //NOTE : Qt will call this slot again when more data is available
+
     if (pendingData.size() > 0)
         updateStatus();
 
